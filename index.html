@@ -1,49 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fruit Burst V2</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="tailwind-init.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst V2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tailwind-init.css" />
+  </head>
+  <body>
+    <!-- completing these project using tailwind utility classes -->
 
-  <!-- completing these project using tailwind utility classes -->
+    <header class="py-6 md:py-8 lg:py-10">
+      <nav
+        class="w-[95%] mx-auto lg:max-w-[1200px] lg:bg-[#F85559] flex justify-between items-center py-5 lg:py-8 lg:px-10 lg:rounded-full"
+      >
+        <ul class="lg:gap-7 hidden lg:flex text-lg text-[#FFFFFF] font-medium">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">All Fruits </a></li>
+        </ul>
 
-<header class="py-6 md:py-8 lg:py-10">
+        <!-- header logo area -->
+        <div class="flex gap-3 lg:gap-[18px]">
+          <img
+            src="./images/logo.png"
+            alt=""
+            class="w-[30px] md:w-10 lg:w-[52px]"
+          />
+          <h1
+            class="text-[20px] font-bold text-black lg:text-[40px] lg:text-[#FFFFFF] md:text-[30px]"
+          >
+            Fruit Burst
+          </h1>
+        </div>
 
-  <nav class="w-[95%] mx-auto lg:max-w-[1200px] lg:bg-[#F85559]  flex justify-between items-center py-5 lg:py-8 lg:px-10 lg:rounded-full">
+        <!-- header form -->
+        <div
+          class="justify-between items-center px-7 py-[18px] bg-white rounded-full hidden lg:flex"
+        >
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="Search here"
+            class="focus:outline-0 placeholder:text-gray-400"
+          />
+          <i class="fa-solid fa-magnifying-glass text-2xl text-gray-600"></i>
+        </div>
 
-<ul class="lg:gap-7 hidden lg:flex text-lg text-[#FFFFFF] font-medium">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">About Us</a></li>
-  <li><a href="#">Shop</a></li>
-  <li><a href="#">All Fruits    </a></li>
-</ul>
+        <!-- hamburger -->
+        <div class="text-2xl block lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
 
-<!-- header logo area -->
-<div class="flex gap-3 lg:gap-[18px]"><img src="./images/logo.png" alt="" class="w-[30px] md:w-10 lg:w-[52px]"><h1 class="text-[20px] font-bold text-black lg:text-[40px] lg:text-[#FFFFFF] md:text-[30px]">Fruit Burst</h1></div>
+    <main>
+      <!-- hero area -->
+      <section class="pb-8 md:pb-[70px] lg:pb-[140px]">
+        <!-- hero main container -->
+        <div
+          class="w-[95%] relative mx-auto lg:max-w-[1200px] py-8 lg:pt-15 lg:pb-52 bg-[url(images/banner1.png)] bg-no-repeat bg-center bg-size-[100%_100%] rounded-md"
+        >
+          <!-- hero info -->
 
-<!-- header form -->
- <div class=" justify-between items-center px-7 py-[18px] bg-white rounded-full hidden lg:flex"><input type="search" name="" id="" placeholder="Search here" class="focus:outline-0 placeholder:text-gray-400"> <i class="fa-solid fa-magnifying-glass text-2xl text-gray-600"></i></div>
+          <div
+            class="flex flex-col gap-6 mx-auto max-w-[670px] text-center text-[#FFFFFF] relative z-10"
+          >
+            <h2
+              class="font-extrabold text-[#FFFFFF] text-[24px] md:text-[44px] lg:text-[72px]"
+            >
+              Exotic tastes at your doorstep
+            </h2>
+            <p class="text-[16px] font-medium md:text-[18px] lg:text-[20px]">
+              We supply highly quality organic products
+            </p>
 
+            <!-- hero btn area -->
+            <div>
+              <button
+                class="px-8 py-5 rounded-xl font-extrabold text-[18px] bg-[#F85559] text-[#FFFFFF]"
+                type="button"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
 
-<!-- hamburger -->
- <div class="text-2xl block lg:hidden"><i class="fa-solid fa-bars"></i></div>
+          <!-- toolitip -->
+          <!-- bg hero dark -->
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-[rgba(18,18,18,0.67)] justify-center rounded-md flex"
+          >
+            <!-- tooltip container -->
+            <div
+              class="hidden lg:grid gap-[90px] grid-cols-5 px-[65px] py-12 bg-white rounded-lg w-[85%] mx-auto absolute bottom-[-110px] text-[20px] font-medium text-[rgba(18,18,18,0.8)]"
+            >
+              <div class="flex flex-col justify-between items-center gap-2.5">
+                <img
+                  src="./images/fruit1.png"
+                  class="max-w-[146px] max-h-28"
+                  alt=""
+                /><span>Cherry</span>
+              </div>
+              <div class="flex flex-col  justify-between items-center gap-2.5">
+                <img
+                  src="./images/fruit2.png"
+                  class="max-w-[146px] max-h-28"
+                  alt=""
+                /><span>Orange</span>
+              </div>
+              <div class="flex flex-col justify-between items-center gap-2.5">
+                <img
+                  src="./images/fruit3.png"
+                  class="max-w-[146px] max-h-28"
+                  alt=""
+                /><span>Mango</span>
+              </div>
+              <div class="flex flex-col justify-between items-center gap-2.5">
+                <img
+                  src="./images/fruit4.png"
+                  class="max-w-[146px] max-h-28"
+                  alt=""
+                /><span>Strawbarry</span>
+              </div>
+              <div class="flex flex-col justify-between items-center gap-2.5">
+                <img
+                  src="./images/fruit5.png"
+                  class="max-w-[146px] max-h-28"
+                  alt=""
+                /><span>Mango</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  </nav>
-
-</header>
-
-
-
-  <main></main>
-  <footer></footer>
-</body>
+<!-- deal of the day -->
+    </main>
+    <footer></footer>
+  </body>
 </html>
