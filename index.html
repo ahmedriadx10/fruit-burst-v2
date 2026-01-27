@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fruit Brust V2</title>
+  <title>Fruit Burst V2</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,34 @@
 <body>
 
   <!-- completing these project using tailwind utility classes -->
-   \
-  <header></header>
+
+<header class="py-6 md:py-8 lg:py-10">
+
+  <nav class="w-[95%] mx-auto lg:max-w-[1200px] lg:bg-[#F85559]  flex justify-between items-center py-5 lg:py-8 lg:px-10 lg:rounded-full">
+
+<ul class="lg:gap-7 hidden lg:flex text-lg text-[#FFFFFF] font-medium">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About Us</a></li>
+  <li><a href="#">Shop</a></li>
+  <li><a href="#">All Fruits    </a></li>
+</ul>
+
+<!-- header logo area -->
+<div class="flex gap-3 lg:gap-[18px]"><img src="./images/logo.png" alt="" class="w-[30px] md:w-10 lg:w-[52px]"><h1 class="text-[20px] font-bold text-black lg:text-[40px] lg:text-[#FFFFFF] md:text-[30px]">Fruit Burst</h1></div>
+
+<!-- header form -->
+ <div class=" justify-between items-center px-7 py-[18px] bg-white rounded-full hidden lg:flex"><input type="search" name="" id="" placeholder="Search here" class="focus:outline-0 placeholder:text-gray-400"> <i class="fa-solid fa-magnifying-glass text-2xl text-gray-600"></i></div>
+
+
+<!-- hamburger -->
+ <div class="text-2xl block lg:hidden"><i class="fa-solid fa-bars"></i></div>
+
+  </nav>
+
+</header>
+
+
+
   <main></main>
   <footer></footer>
 </body>
